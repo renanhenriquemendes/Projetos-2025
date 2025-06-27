@@ -1,103 +1,62 @@
-let atual = 0;
-let perguntaAtual;
+const numeroSenha = document.querySelector('.parametro-senha__texto');
+let tamanhoSenha = 12;
+numeroSenha.textContent = tamanhoSenha;
 
-function mostraPergunta() {
-  perguntaAtual = perguntas[atual];
-  caixaPerguntas.textContent = perguntaAtual.enunciado;
+const botoes = document.querySelectorAll('.parametro-senha__botao');
+
+console.log(botoes)
+function geraSenha(){
+    let numeroAleatorio = Math.random()*letrasMaiusculas.length;
+    numeroAleatorio = Math.floor(numeroAleatorio);
+    console.log(numeroAleatorio);
 }
-
-mostraPergunta();
-let atual = 0;
-Quero participar
-
-let perguntaAtual;
-
-function mostraPergunta() {
-  perguntaAtual = perguntas[atual];
-  caixaPerguntas.textContent = perguntaAtual.enunciado;
-  mostraAlternativas();
+function geraSenha(){
+    let numeroAleatorio = Math.random()*letrasMaiusculas.length;
+    numeroAleatorio = Math.floor(numeroAleatorio);
+    console.log(letrasMaiusculas[numeroAleatorio]);
 }
-function mostraAlternativas() {}
-
-mostraPergunta();
-const alternativa
-(const alternativa of perguntaAtual.alternativas)
-function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
+function geraSenha(){
+    for (let i = 0; i < tamanhoSenha;i++){
+        let numeroAleatorio = Math.random()*letrasMaiusculas.length;
+        numeroAleatorio = Math.floor(numeroAleatorio);
+        console.log(letrasMaiusculas[numeroAleatorio]);
     }
-  }
-  function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
-      const botaoAlternativas = document.createElement("button");
-    }
-  }
-  function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
-      const botaoAlternativas = document.createElement("button");
-      botaoAlternativas.textContent = alternativa;
-    }
-  }
-  function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
-      const botaoAlternativas = do
-Quero participar
- cument.createElement("button");
-      botaoAlternativas.textContent = alternativa;
-      caixaAlternativas.appendChild(botaoAlternativas);
-    }
-  }
-  botao.addEventListener("click", function () {
-    respostaSelecionada(opcao);
-  });
-  botao.addEventListener("click", () => respostaSelecionada(opcao));
-  function respostaSelecionada(opcaoSelecionada) {
-    atual++;
-    mostraPergunta();
-  }
-  function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opcaoSelecionada.afirmacoes;
-    atual++;
-    mostraPergunta();
-  }
-  let atual = 0;
-let perguntaAtual;
-let historiaFinal = "";
-function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opcaoSelecionada.afirmacoes;
-    historiaFinal += afirmacoes + " ";
-    atual++;
-    mostraPergunta();
-  }
-  var botaoDescobrir = document.getElementById('descobrir');
-
-function mostrarFato() {
-    alert("O elefante é o maior animal terrestre!");
 }
-
-botaoDescobrir.addEventListener("clicar", mostrarFato);
-botao.______ = opcao.texto;
-botao.__________('click', () => cafeSelecionado(opcao));
-containerDeOpcoes._________(botao);
-function mostraPergunta() {
-    if (atual >= perguntas.length) {
-      mostraResultado();
-      return;
+function geraSenha(){
+    let senha = '' ";
+    for (let i = 0; i < tamanhoSenha;i++){
+        let numeroAleatorio = Math.random()*letrasMaiusculas.length;
+        numeroAleatorio = Math.floor(numeroAleatorio);
+        console.log(letrasMaiusculas[numeroAleatorio]);
     }
-    perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
-    mostraAlternativas();
-  }
-  function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
-    textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
-  }
-  let historiaFinal = "";
-  function respostaSelecionada(opcaoSelecionada) {
-    const afirmacao = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacao + " ";
-    atual++;
-    mostraPergunta();
-  }
-  
+}
+function geraSenha(){
+    let senha = '' ”;
+    for (let i = 0; i < tamanhoSenha;i++){
+        let numeroAleatorio = Math.random()*letrasMaiusculas.length;
+        numeroAleatorio = Math.floor(numeroAleatorio);
+        senha = senha + letrasMaiusculas[numeroAleatorio];
+    }
+}const checkbox = document.querySelectorAll('.checkbox');
+campoSenha.value = senha;
+function geraSenha(){
+    let senha = '' ”;
+    for (let i = 0; i < tamanhoSenha;i++){
+        let numeroAleatorio = Math.random()*letrasMaiusculas.length;
+        numeroAleatorio = Math.floor(numeroAleatorio);
+        senha = senha + letrasMaiusculas[numeroAleatorio];
+    }
+    campoSenha.value = senha;
+}
+const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
+const numeros = '0123456789';
+const simbolos = '!@%*?';
+if (checkbox[1].checked){
+    alfabeto = alfabeto + letrasMinusculas;
+}
+if (checkbox[2].checked){
+    alfabeto = alfabeto + numeros;
+}
+if (checkbox[3].checked){
+    alfabeto = alfabeto + simbolos;
+}

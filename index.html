@@ -1,13 +1,200 @@
-// Trecho ilustrativo do arquivo script.js
-enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia...",
-alternativas: [
-  {
-    texto: "Isso é assustador!",
-    afirmacao: "No início ficou com medo do que essa tecnologia pode fazer."
-  },
-  {
-    texto: "Isso é maravilhoso!",
-    afirmacao: "Quis saber como usar IA no seu dia a dia."
-  }
-]
-missao-inteligencia-artificial
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+    <button class="parametro-senha__botao">-</button>
+    <button class="parametro-senha__botao">+</button>
+</div>  
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+    <button class="parametro-senha__botao">-</button>
+    <p class="parametro-senha__texto">12</p>
+    <button class="parametro-senha__botao">+</button>
+</div>  
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+    <div class="parametro-senha-botoes">
+        <button class="parametro-senha__botao">-</button>
+        <p class="parametro-senha__texto">12</p>
+        <button class="parametro-senha__botao">+</button>
+    </div>
+</div>  
+
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Características da senha</h4>
+    <input name="maiusculo" type="checkbox">
+</div>
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Características da senha</h4>
+    <input name="maiusculo" type="checkbox">
+    <label for="maiusculo">Letras maiúsculas</label>
+ </div>
+ <div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Características da senha</h4>
+    <input name="maiusculo" type="checkbox">
+    <label for="maiusculo">Letras maiúsculas</label>
+    <input name="minusculo" type="checkbox">
+    <label for="minusculo">Letras minúsculas</label>
+ </div>
+ <div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Características da senha</h4>
+    <div class="parametro-senha-checkbox">
+        <input name="maiusculo" type="checkbox">
+        <label for="maiusculo">Letras maiúsculas</label>
+    </div>
+</div>
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Características da senha</h4>
+    <div class="parametro-senha-checkbox">
+        <input name="maiusculo" type="checkbox">
+        <label for="maiusculo">Letras maiúsculas</label>
+    </div>
+    <div class="parametro-senha-checkbox">
+        <input name="minusculo" type="checkbox">
+        <label for="minusculo">Letras minúsculas</label>
+    </div>
+</div>
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Características da senha</h4>
+    <div class="parametro-senha-checkbox">
+        <input name="maiusculo" type="checkbox">
+        <label for="maiusculo">Letras maiúsculas</label>
+    </div>
+    <div class="parametro-senha-checkbox">
+        <input name="minusculo" type="checkbox">
+        <label for="minusculo">Letras minúsculas</label>
+    </div>
+    <div class="parametro-senha-checkbox">
+        <input name="numero" type="checkbox">
+        <label for="numero">Números</label>
+    </div>
+</div>
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Características da senha</h4>
+    <div class="parametro-senha-checkbox">
+        <input name="maiusculo" type="checkbox" checked>
+        <label for="maiusculo">Letras maiúsculas</label>
+    </div>
+    <div class="parametro-senha-checkbox">
+        <input name="minusculo" type="checkbox">
+        <label for="minusculo">Letras minúsculas</label>
+    </div>
+    <div class="parametro-senha-checkbox">
+        <input name="numero" type="checkbox">
+        <label for="numero">Números</label>
+    </div>
+    <div class="parametro-senha-checkbox">
+    <input name="simbolo" type="checkbox">
+        <label for="simbolo">Símbolos</label>
+    </div>
+</div>
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Características da senha</h4>
+    <div class="parametro-senha-checkbox">
+        <input name="maiusculo" type="checkbox" class="checkbox" checked>
+        <label for="maiusculo">Letras maiúsculas</label>
+    </div>
+    <div class="parametro-senha-checkbox">
+        <input name="minusculo" type="checkbox" class="checkbox">
+        <label for="minusculo">Letras minúsculas</label>
+    </div>
+    <div class="parametro-senha-checkbox">
+        <input name="numero" type="checkbox" class="checkbox">
+        <label for="numero">Números</label>
+    </div>
+    <div class="parametro-senha-checkbox">
+        <input name="simbolo" type="checkbox" class="checkbox">
+        <label for="simbolo">Símbolos</label>
+    </div>
+</div>
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Força da senha</h4>
+    <div class="barra"></div>
+    <div class="forca fraca"></div>
+    <div class="parametro-senha-textos"></div>
+</div>
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Força da senha</h4>
+    <div class="barra"></div>
+    <div class="forca fraca"></div>
+    <div class="parametro-senha-textos">
+        <p>Fraca</p>
+        <p>Média</p>
+        <p>Forte</p>
+    </div>
+</div>
+<div class="forca fraca"></div>
+<input name="senha" type="text" id="campo-senha" readonly>
+const campoSenha = document.querySelector('#campo-senha');
+const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
+const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
+
+campoSenha.value = letrasMaiusculas;
+function geraSenha(){
+    let numeroAleatorio = Math.random()*letrasMaiusculas.length;
+    console.log(numeroAleatorio);
+}
+const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
+geraSenha();
+function diminuiTamanho(){
+    if (tamanhoSenha > 1){
+       // tamanhoSenha = tamanhoSenha-1;
+        tamanhoSenha--;
+    }
+    numeroSenha.textContent = tamanhoSenha;
+    geraSenha();
+}
+function aumentaTamanho(){
+    if (tamanhoSenha < 20){
+       // tamanhoSenha = tamanhoSenha+1;
+       tamanhoSenha++;
+    }
+    numeroSenha.textContent = tamanhoSenha;
+    geraSenha();
+}
+let alfabeto = '';
+let alfabeto = '';
+if (checkbox[0].checked){
+}
+let alfabeto = '';
+if (checkbox[0].checked){
+    alfabeto = alfabeto + letrasMaiusculas;
+}
+let alfabeto = '';
+if (checkbox[0].checked){
+    alfabeto = alfabeto + letrasMaiusculas;
+}
+console.log(alfabeto);
+for (i=0; i < checkbox.length;i++){
+ 
+}
+for (i=0; i < checkbox.length;i++){
+    checkbox[i].onclick = geraSenha;
+}
+for (let i = 0; i < tamanhoSenha;i++){
+        let numeroAleatorio = Math.random()*alfabeto.length;
+        numeroAleatorio = Math.floor(numeroAleatorio);
+        senha = senha + alfabeto[numeroAleatorio];
+    }
+    function geraSenha(){
+    let alfabeto = '';
+    if (checkbox[0].checked){
+        alfabeto = alfabeto + letrasMaiusculas;
+    }
+    if (checkbox[1].checked){
+        alfabeto = alfabeto + letrasMinusculas;
+    }
+    if (checkbox[2].checked){
+        alfabeto = alfabeto + numeros;
+    }
+    if (checkbox[3].checked){
+        alfabeto = alfabeto + simbolos;
+    }
+    console.log(alfabeto);
+    let senha = '';
+    for (let i = 0; i < tamanhoSenha;i++){
+        let numeroAleatorio = Math.random()*alfabeto.length;
+        numeroAleatorio = Math.floor(numeroAleatorio);
+        senha = senha + alfabeto[numeroAleatorio];
+    }
+    campoSenha.value = senha;
+}
+
