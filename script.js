@@ -8,6 +8,8 @@ function mostraPergunta() {
 
 mostraPergunta();
 let atual = 0;
+Quero participar
+
 let perguntaAtual;
 
 function mostraPergunta() {
@@ -37,7 +39,9 @@ function mostraAlternativas() {
   }
   function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
-      const botaoAlternativas = document.createElement("button");
+      const botaoAlternativas = do
+Quero participar
+ cument.createElement("button");
       botaoAlternativas.textContent = alternativa;
       caixaAlternativas.appendChild(botaoAlternativas);
     }
